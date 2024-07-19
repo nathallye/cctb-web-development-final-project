@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f4e1e1;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #d85273;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #fff5f7;
+}
+
+main {
+  margin-bottom: 10rem;
+}
