@@ -72,6 +72,24 @@ nav {
   color: #ffffff;
 }
 
+.cart-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: calc(-1.25rem / 2);
+
+  border-radius: 50%;
+  right: calc(-1.25rem / 2);
+
+  color: #6d2121;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 @media (max-width: 850px) {
   header {
     padding: 0 1rem;

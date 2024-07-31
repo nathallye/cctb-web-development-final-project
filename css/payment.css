@@ -28,7 +28,8 @@ span {
 
 form .row {
   display: flex;
-  gap: 15px;
+  justify-content: space-around;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -44,7 +45,7 @@ form .row {
 }
 
 .column .input-box {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .input-box span {

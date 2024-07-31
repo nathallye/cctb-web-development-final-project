@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <script src="script/cart.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7e4dac37c7.js"
       crossorigin="anonymous"
@@ -17,7 +18,7 @@
         <div class="nav-container">
           <a href="/index.html"
             ><img
-              src="image/manalys-cake-delivery-logo.png"
+              src="image/manalys-dessert-delivery-logo.png"
               alt="manalys cake delivery logo"
           /></a>
 
@@ -30,10 +31,25 @@
 
         <button class="cart-button">
           <a href="cart.html">
+            <span id="cart-button-amount">0</span>
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </button>
       </div>
     </header>
+    <main>
+      <section class="cart-container">
+        <h1 class="cart-title">Your Cart</h1>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-summary">
+          <p>Total: $<span id="cart-total">0.00</span></p>
+          <p>Total number of items: <span id="cart-amount">0</span></p>
+          <button id="checkout-button" class="checkout-button">
+            Proceed to Checkout
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
