@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <script src="script/cart.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7e4dac37c7.js"
       crossorigin="anonymous"
     ></script>
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css" />
   </head>
 
   <body>
@@ -30,37 +31,50 @@
           </nav>
         </div>
 
-        <button class="cart-button">
-          <a href="cart.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
+        <button id="navigate-to-cart" class="cart-button">
+          <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
     </header>
-
     <div class="contact-container">
       <h1>Contact us</h1>
       <p>Our address is:</p>
       <p>101, Smith Street, Vancouver, BC</p>
       <p>Phone: 123-456-789</p>
-      <p>Sharing hapiness everywhere!<br>Join us!</p>
-      
-      <form action="/submit-form" method="post">
-          <div class="form-group">
-              <label for="name">Type your name</label>
-              <input type="text" id="name" name="name" placeholder="Type your name" required>
-          </div>
-          <div class="form-group">
-              <label for="email">Please enter a valid email address:</label>
-              <input type="email" id="email" name="email" placeholder="Please enter a valid email address:" required>
-          </div>
-          <div class="form-group">
-              <label for="message">Type your message</label>
-              <textarea id="message" name="message" placeholder="Type your message" required></textarea>
-          </div>
-          <button type="submit">Send</button>
-      </form>
-  </div>
+      <p>Sharing hapiness everywhere!<br />Join us!</p>
 
+      <form action="/submit-form" method="post">
+        <div class="form-group">
+          <label for="name">Type your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Type your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Please enter a valid email address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Please enter a valid email address:"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Type your message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>

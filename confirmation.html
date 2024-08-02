@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/confirmation.css" />
     <script src="script/cart.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7e4dac37c7.js"
       crossorigin="anonymous"
     ></script>
-    <title>Cart</title>
+
+    <title>Confirmation</title>
   </head>
   <body>
     <header>
@@ -32,33 +33,23 @@
         </div>
 
         <button id="navigate-to-cart" class="cart-button">
-          <span id="cart-button-amount">0</span>
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
     </header>
-    <main>
-      <section class="cart-container">
-        <div class="cart-details-container">
-          <h1 class="cart-title">Your Cart</h1>
-          <div class="cart-items-container">
-            <ul id="cart-items" class="cart-items regular-text"></ul>
-          </div>
-
-          <div class="cart-summary-container">
-            <p class="cart-total regular-text">
-              Total: $<span id="cart-total">0.00</span>
-            </p>
-            <p class="cart-amount regular-text">
-              Total number of items: <span id="cart-amount">0</span>
-            </p>
-            <button id="navigate-to-checkout" class="cart-checkout-button">
-              Proceed to Checkout
-            </button>
-          </div>
+    <section class="confirmation-container">
+      <div class="confirmation-details-container">
+        <h1 class="confirmation-title">Thank you!</h1>
+        <div class="confirmation-text-container">
+          <p class="regular-text">
+            Your order has been placed. It will arrive within 4 hours from now.
+          </p>
+          <i class="fa-solid fa-car"></i>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <button class="confirmation-button" onclick="navigateToHome()">
+          Go back to home page
+        </button>
+      </div>
+    </section>
   </body>
 </html>

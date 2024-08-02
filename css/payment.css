@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppims", sans-serif;
 }
 
-span {
+label {
   color: #403937;
   font-weight: 400;
   line-height: 130%;
@@ -16,14 +15,14 @@ span {
   justify-content: center;
   align-items: center;
   min-height: 100px;
-  padding: 25px;
+  padding: 2rem;
 }
 
 .container form {
-  width: 700px;
-  padding: 40px;
+  width: 40rem;
+  padding: 2rem;
   background: #f4e1e1;
-  border-radius: 10px;
+  border-radius: 6px 44px 6px 44px;
 }
 
 form .row {
@@ -38,7 +37,7 @@ form .row {
 }
 
 .column .title {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #520a1d;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -48,7 +47,7 @@ form .row {
   margin: 10px 0;
 }
 
-.input-box span {
+.input-box label {
   display: block;
   margin-bottom: 10px;
 }

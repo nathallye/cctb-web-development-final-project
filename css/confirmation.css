@@ -1,0 +1,57 @@
+.confirmation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 10rem;
+  padding: 2rem;
+}
+
+.confirmation-title {
+  color: #520a1d;
+  font-size: 1.3rem;
+}
+
+.confirmation-details-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #f4e1e1;
+  border-radius: 6px 44px 6px 44px;
+
+  gap: 3rem;
+  width: 40rem;
+  min-width: 40rem;
+  min-height: 15rem;
+  padding: 2rem;
+}
+
+.confirmation-text-container {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.confirmation-text-container i {
+  color: #520a1d;
+}
+
+.confirmation-button {
+  color: #ffffff;
+  font-size: 17;
+
+  background: #d85273;
+  border: none;
+  border-radius: 6px;
+
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 2rem;
+}
+
+.confirmation-button:hover {
+  background-color: #a45065;
+  cursor: pointer;
+}

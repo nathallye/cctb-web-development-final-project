@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/payment.css" />
+    <script src="script/cart.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7e4dac37c7.js"
       crossorigin="anonymous"
@@ -29,44 +30,46 @@
           </nav>
         </div>
 
-        <button class="cart-button">
-          <a href="cart.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
+        <button id="navigate-to-cart" class="cart-button">
+          <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
     </header>
 
     <div class="container">
-      <form action="">
+      <form action="confirmation.html">
         <div class="row">
           <div class="column">
             <h3 class="title">Deliver Address</h3>
             <div class="input-box">
-              <span>Full Name :</span>
-              <input type="text" placeholder=" Manaly Stanly" />
+              <label>Full Name :</label>
+              <input type="text" placeholder="Manaly Stanly" required />
             </div>
             <div class="input-box">
-              <span>Email :</span>
-              <input type="email" placeholder="example@example.com" />
+              <label>Email :</label>
+              <input type="email" placeholder="example@example.com" required />
             </div>
             <div class="input-box">
-              <span>Address :</span>
-              <input type="text" placeholder="Room - Street - Locality" />
+              <label>Address :</label>
+              <input
+                type="text"
+                placeholder="Room - Street - Locality"
+                required
+              />
             </div>
             <div class="input-box">
-              <span>City :</span>
-              <input type="text" placeholder="Vancouver" />
+              <label>City :</label>
+              <input type="text" placeholder="Vancouver" required />
             </div>
 
             <div class="fkex">
               <div class="input-box">
-                <span>State :</span>
-                <input type="text" placeholder="BC" />
+                <label>State :</label>
+                <input type="text" placeholder="BC" required />
               </div>
               <div class="input-box">
-                <span>Zip Code :</span>
-                <input type="number" placeholder="123 456" />
+                <label>Zip Code :</label>
+                <input type="text" placeholder="123 456" required />
               </div>
             </div>
           </div>
@@ -74,36 +77,56 @@
           <div class="column">
             <h3 class="title">Payment</h3>
             <div class="input-box">
-              <span>Cards Accepted :</span>
-              <img src="image/creditcard.png" alt="" />
+              <label>Cards Accepted :</label>
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-discover"></i>
             </div>
             <div class="input-box">
-              <span>Name On Card :</span>
-              <input type="text" placeholder="Ms. Manaly Stanly" />
+              <label>Name On Card :</label>
+              <input type="text" placeholder="Ms. Manaly Stanly" required />
             </div>
             <div class="input-box">
-              <span>Credit Card Number :</span>
-              <input type="number" placeholder="1111 2222 3333 4444" />
+              <label>Credit Card Number :</label>
+              <input
+                type="number"
+                placeholder="1111 2222 3333 4444"
+                pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+                required
+              />
             </div>
             <div class="input-box">
-              <span>Exp. Month :</span>
-              <input type="text" placeholder="August" />
+              <label>Exp. Month :</label>
+              <input type="number" placeholder="03" maxlength="2" required />
             </div>
 
             <div class="fkex">
               <div class="input-box">
-                <span>Exp. Year :</span>
-                <input type="number" placeholder="2025" />
+                <label>Exp. Year :</label>
+                <input
+                  type="number"
+                  placeholder="2025"
+                  minlength="4"
+                  required
+                />
               </div>
               <div class="input-box">
-                <span>CVV :</span>
-                <input type="number" placeholder="123" />
+                <label>CVV :</label>
+                <input
+                  type="number"
+                  placeholder="123"
+                  maxlength="3"
+                  pattern="^\d{3}$"
+                  required
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" id="place-order-button" class="btn">
+          Place order
+        </button>
       </form>
     </div>
   </body>
