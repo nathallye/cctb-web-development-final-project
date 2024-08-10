@@ -28,6 +28,7 @@
             <a href="events.html">Events</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
           </nav>
         </div>
 
@@ -83,7 +84,7 @@
       </section>
 
       <section class="menu-container">
-        <h1 class="menu-title">Our cakes</h1>
+        <h1 class="menu-title">Cakes</h1>
         <div class="menu-items">
           <div class="menu-item" data-name="Chocolate Cake" data-price="40">
             <img
@@ -213,16 +214,23 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Cupcakes" data-price="25">
+          </div>
+        </div>
+      </section>
+      <section class="menu-container">
+        <h1 class="menu-title">Cheesecakes</h1>
+        <div class="menu-items">
+          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              src="image/home/cake/triplechocolate.jpeg"
               alt=""
             />
-            <h3>Cupcakes (dozen)</h3>
+            <h3>Chocolate Cake</h3>
             <p class="regular-text">
-              Small, individual cakes typically frosted and decorated
+              Rich and moist chocolate sponge cake layered with creamy chocolate
+              frosting
             </p>
-            <p class="regular-text">$25</p>
+            <p class="regular-text">$40</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -244,14 +252,15 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Lemon Tart" data-price="30">
+          <div class="menu-item" data-name="Cheesecake" data-price="30">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
               alt=""
             />
-            <h3>Lemon Tart</h3>
+            <h3>Cheesecake</h3>
             <p class="regular-text">
-              A tart with a buttery crust filled with a tangy lemon curd
+              A creamy and dense dessert with a graham cracker crust, often
+              topped with fruit or chocolate
             </p>
             <p class="regular-text">$30</p>
             <div class="menu-item-cart">
@@ -275,15 +284,47 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Fruit Tart" data-price="25">
+          <div class="menu-item" data-name="Tiramisu" data-price="50">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
               alt=""
             />
-            <h3>Fruit Tart</h3>
+            <h3>Tiramisu</h3>
             <p class="regular-text">
-              A pastry crust filled with custard and topped with a variety of
-              fresh fruits
+              An Italian dessert made of layers of coffee-soaked ladyfingers,
+              mascarpone cheese, and cocoa powder
+            </p>
+            <p class="regular-text">$50</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Macarons" data-price="25">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Macarons</h3>
+            <p class="regular-text">
+              Delicate French meringue-based cookies with a creamy filling,
+              available in various flavors.
             </p>
             <p class="regular-text">$25</p>
             <div class="menu-item-cart">
@@ -307,17 +348,22 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Mousse" data-price="20">
+        </div>
+      </section>
+      <section class="menu-container">
+        <h1 class="menu-title">Cupcakes</h1>
+        <div class="menu-items">
+          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              src="image/home/cake/triplechocolate.jpeg"
               alt=""
             />
-            <h3>Mousse (set of 6)</h3>
+            <h3>Chocolate Cake</h3>
             <p class="regular-text">
-              A light and airy dessert made with whipped cream and flavored with
-              chocolate, fruit, or coffee
+              Rich and moist chocolate sponge cake layered with creamy chocolate
+              frosting
             </p>
-            <p class="regular-text">$20</p>
+            <p class="regular-text">$40</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -339,14 +385,17 @@
               </form>
             </div>
           </div>
-          <!-- <div class="menu-item">
+          <div class="menu-item" data-name="Cheesecake" data-price="30">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
               alt=""
             />
-            <h3>Cake name</h3>
-            <p class="regular-text">Cake description</p>
-            <p class="regular-text">$20</p>
+            <h3>Cheesecake</h3>
+            <p class="regular-text">
+              A creamy and dense dessert with a graham cracker crust, often
+              topped with fruit or chocolate
+            </p>
+            <p class="regular-text">$30</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -358,12 +407,213 @@
                   <option value="5">5</option>
                 </select>
 
-                <button type="submit" class="menu-item-cart-button" onclick="addToCart(this)">
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </form>
             </div>
-          </div> -->
+          </div>
+          <div class="menu-item" data-name="Tiramisu" data-price="50">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Tiramisu</h3>
+            <p class="regular-text">
+              An Italian dessert made of layers of coffee-soaked ladyfingers,
+              mascarpone cheese, and cocoa powder
+            </p>
+            <p class="regular-text">$50</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Macarons" data-price="25">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Macarons</h3>
+            <p class="regular-text">
+              Delicate French meringue-based cookies with a creamy filling,
+              available in various flavors.
+            </p>
+            <p class="regular-text">$25</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-container">
+        <h1 class="menu-title">Others</h1>
+        <div class="menu-items">
+          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
+            <img
+              src="image/home/cake/triplechocolate.jpeg"
+              alt=""
+            />
+            <h3>Chocolate Cake</h3>
+            <p class="regular-text">
+              Rich and moist chocolate sponge cake layered with creamy chocolate
+              frosting
+            </p>
+            <p class="regular-text">$40</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Cheesecake" data-price="30">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Cheesecake</h3>
+            <p class="regular-text">
+              A creamy and dense dessert with a graham cracker crust, often
+              topped with fruit or chocolate
+            </p>
+            <p class="regular-text">$30</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Tiramisu" data-price="50">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Tiramisu</h3>
+            <p class="regular-text">
+              An Italian dessert made of layers of coffee-soaked ladyfingers,
+              mascarpone cheese, and cocoa powder
+            </p>
+            <p class="regular-text">$50</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Macarons" data-price="25">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcUrcH8BpmbJ7JAN8h68R9CcGICB-hFnLPw&s"
+              alt=""
+            />
+            <h3>Macarons</h3>
+            <p class="regular-text">
+              Delicate French meringue-based cookies with a creamy filling,
+              available in various flavors.
+            </p>
+            <p class="regular-text">$25</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

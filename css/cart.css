@@ -4,14 +4,12 @@
   flex-direction: column;
 
   min-height: 10rem;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
 }
 
 .cart-title {
-  align-self: center;
-
   color: #520a1d;
-  font-size: 1.3rem;
+  font-size: 2.2rem;
 }
 
 .cart-details-container {
@@ -33,7 +31,7 @@
   background-color: #d85273;
   border: none;
   border-radius: 10%;
-  
+
   margin-left: 0.4rem;
   padding: 0.22rem 0.4rem;
 }
@@ -51,7 +49,6 @@
 
 .cart-checkout-button {
   color: #ffffff;
-  font-size: 17;
 
   background: #d85273;
   border: none;

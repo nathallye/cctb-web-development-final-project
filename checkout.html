@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/payment.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
     <script src="script/cart.js" defer></script>
+    <script src="script/checkout.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7e4dac37c7.js"
       crossorigin="anonymous"
     ></script>
-    <title>Payment</title>
+    <title>Checkout</title>
   </head>
   <body>
     <header>
@@ -27,6 +29,7 @@
             <a href="events.html">Events</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
           </nav>
         </div>
 
@@ -37,88 +40,94 @@
     </header>
 
     <div class="container">
-      <form action="confirmation.html">
+      <form id="checkout-form" action="confirmation.html">
         <div class="row">
           <div class="column">
-            <h3 class="title">Deliver Address</h3>
+            <h1 class="title">Deliver Address</h1>
             <div class="input-box">
-              <label>Full Name :</label>
-              <input type="text" placeholder="Manaly Stanly" required />
+              <label for="full-name">Full Name</label>
+              <input id="full-name" type="text" placeholder="Manaly Stanly" />
             </div>
             <div class="input-box">
-              <label>Email :</label>
-              <input type="email" placeholder="example@example.com" required />
-            </div>
-            <div class="input-box">
-              <label>Address :</label>
+              <label for="email">Email</label>
               <input
-                type="text"
-                placeholder="Room - Street - Locality"
-                required
+                id="email"
+                type="email"
+                placeholder="example@example.com"
               />
             </div>
             <div class="input-box">
-              <label>City :</label>
-              <input type="text" placeholder="Vancouver" required />
+              <label for="address">Address</label>
+              <input
+                id="address"
+                type="text"
+                placeholder="Room - Street - Locality"
+              />
+            </div>
+            <div class="input-box">
+              <label for="city">City</label>
+              <input id="city" type="text" placeholder="Vancouver" />
             </div>
 
-            <div class="fkex">
+            <div class="flex">
               <div class="input-box">
-                <label>State :</label>
-                <input type="text" placeholder="BC" required />
+                <label for="state">State</label>
+                <input id="state" type="text" placeholder="BC" />
               </div>
               <div class="input-box">
-                <label>Zip Code :</label>
-                <input type="text" placeholder="123 456" required />
+                <label for="zip-code">Zip Code</label>
+                <input id="zip-code" type="text" placeholder="123 456" />
               </div>
             </div>
           </div>
 
           <div class="column">
-            <h3 class="title">Payment</h3>
+            <h1 class="title">Payment</h1>
             <div class="input-box">
-              <label>Cards Accepted :</label>
+              <label>Cards Accepted</label>
               <i class="fa-brands fa-cc-visa"></i>
               <i class="fa-brands fa-cc-mastercard"></i>
               <i class="fa-brands fa-cc-discover"></i>
             </div>
             <div class="input-box">
-              <label>Name On Card :</label>
-              <input type="text" placeholder="Ms. Manaly Stanly" required />
-            </div>
-            <div class="input-box">
-              <label>Credit Card Number :</label>
+              <label for="card-name">Name On Card</label>
               <input
-                type="number"
-                placeholder="1111 2222 3333 4444"
-                pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
-                required
+                id="card-name"
+                type="text"
+                placeholder="Ms. Manaly Stanly"
               />
             </div>
             <div class="input-box">
-              <label>Exp. Month :</label>
-              <input type="number" placeholder="03" maxlength="2" required />
+              <label for="card-number">Credit Card Number</label>
+              <input
+                id="card-number"
+                type="number"
+                placeholder="1111 2222 3333 4444"
+              />
+            </div>
+            <div class="input-box">
+              <label for="exp-month">Exp. Month</label>
+              <input
+                id="exp-month"
+                type="number"
+                placeholder="03"
+                maxlength="2"
+              />
             </div>
 
-            <div class="fkex">
+            <div class="flex">
               <div class="input-box">
-                <label>Exp. Year :</label>
+                <label for="exp-year">Exp. Year</label>
                 <input
+                  id="exp-year"
                   type="number"
                   placeholder="2025"
                   minlength="4"
-                  required
                 />
               </div>
               <div class="input-box">
-                <label>CVV :</label>
-                <input
-                  type="number"
-                  placeholder="123"
-                  maxlength="3"
-                  pattern="^\d{3}$"
-                  required
-                />
+                <label for="cvv">CVV</label>
+                <input id="cvv" type="number" placeholder="123" maxlength="3" />
               </div>
             </div>
           </div>
