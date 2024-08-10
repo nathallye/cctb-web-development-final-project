@@ -57,5 +57,11 @@ section > h3 {
     gap: 20px;
 }
 
+.founder-pics {
+    display: flex;
+}
 
-
+.founder-pics img {
+    width: 100px;
+    height: 100px;
+}

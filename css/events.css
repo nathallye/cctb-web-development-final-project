@@ -53,3 +53,37 @@ p {
 #contact-us p {
     margin-bottom: 15px;
 }
+
+.dessert-box-details {
+    display: flex;
+}
+
+.dessert-box-images img {
+    width: 100px;
+    height: 100px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 2.5rem;
+}
+
+.gallery-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    min-height: 20rem;
+    padding-top: 0;
+    gap: 1rem;
+    text-align: center;
+}
+
+.gallery-items img {
+    width: 200px;
+    height: 200px;
+}
