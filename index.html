@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="image/manalys-dessert-delivery-logo.png" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -86,40 +87,7 @@
       <section class="menu-container">
         <h1 class="menu-title">Cakes</h1>
         <div class="menu-items">
-          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
-            <img
-              src="image/home/cake/triplechocolate.jpeg"
-              alt=""
-            />
-            <h3>Chocolate Lovers</h3>
-            <p class="regular-text">
-              The ultimate treat for chocolate lovers! This cake features
-              a triple chocolate ombre buttercream base, adorned with 
-              chocolate fixings.
-            </p>
-            <p class="regular-text">$150</p>
-            <div class="menu-item-cart">
-              <form>
-                <label for="amount" class="regular-text">Amount:</label>
-                <select id="amount" class="menu-item-cart-amount" name="amount">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-
-                <button
-                  type="submit"
-                  class="menu-item-cart-button"
-                  onclick="addToCart(this)"
-                >
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="menu-item" data-name="Cheesecake" data-price="30">
+          <div class="menu-item" data-name="Cake - Signature Drip" data-price="90">
             <img
               src="image/home/cake/sky.jpeg"
               alt=""
@@ -131,7 +99,7 @@
               way to celebrate. They can be customized with various colors to 
               suit your preferences.
             </p>
-            <p class="regular-text">$90</p>
+            <p class="regular-text menu-item-price">$90</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -153,7 +121,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Tiramisu" data-price="50">
+          <div class="menu-item" data-name="Cake - Floral Buttercream" data-price="180">
             <img
               src="image/home/cake/floral.JPG"
               alt=""
@@ -164,7 +132,7 @@
               crafted with a palette knife or piping. These delicate blooms add a touch 
               of refinement to any celebration.
             </p>
-            <p class="regular-text">$180</p>
+            <p class="regular-text menu-item-price">$180</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -186,7 +154,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Macarons" data-price="25">
+          <div class="menu-item" data-name="Cake - Cookie Monster" data-price="150">
             <img
               src="image/home/cake/cookiemonster.jpg"
               alt=""
@@ -196,7 +164,40 @@
               A moist chocolate cake filled with creamy chocolate chip cookie buttercream 
               and topped with rich oreo frosting. A must-try for cookie lovers!
             </p>
-            <p class="regular-text">$150</p>
+            <p class="regular-text menu-item-price">$150</p>
+            <div class="menu-item-cart">
+              <form>
+                <label for="amount" class="regular-text">Amount:</label>
+                <select id="amount" class="menu-item-cart-amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+
+                <button
+                  type="submit"
+                  class="menu-item-cart-button"
+                  onclick="addToCart(this)"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="menu-item" data-name="Cake - Chocolate Lovers" data-price="150">
+            <img
+              src="image/home/cake/triplechocolate.jpeg"
+              alt=""
+            />
+            <h3>Chocolate Lovers</h3>
+            <p class="regular-text">
+              The ultimate treat for chocolate lovers! This cake features
+              a triple chocolate ombre buttercream base, adorned with 
+              chocolate fixings.
+            </p>
+            <p class="regular-text menu-item-price">$150</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -224,7 +225,7 @@
       <section class="menu-container">
         <h1 class="menu-title">Cheesecakes</h1>
         <div class="menu-items">
-          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
+          <div class="menu-item" data-name="Cheesecake - Vanilla" data-price="75">
             <img
               src="image/home/cheesecake/classic.JPG" alt=""
             />
@@ -233,7 +234,7 @@
               A classic cheesecake enriched with the aromatic essence of 
               fresh vanilla beans.
             </p>
-            <p class="regular-text">$75</p>
+            <p class="regular-text menu-item-price">$75</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -255,7 +256,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Cheesecake" data-price="30">
+          <div class="menu-item" data-name="Cheesecake - Pistachio" data-price="85">
             <img
               src="image/home/cheesecake/pistachio.jpg"
               alt=""
@@ -265,7 +266,7 @@
               A decadent cheesecake with a rich, pistachio-infused 
               filling, topped with a velvety pistachio ganache.
             </p>
-            <p class="regular-text">$85</p>
+            <p class="regular-text menu-item-price">$85</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -287,7 +288,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Tiramisu" data-price="50">
+          <div class="menu-item" data-name="Cheesecake - Blueberry" data-price="85">
             <img
               src="image/home/cheesecake/blueberry.jpg" alt=""
             />
@@ -296,7 +297,7 @@
               Rich and creamy cheesecake infused with white chocolate 
               and swirled with sweet blueberry sauce.
             </p>
-            <p class="regular-text">$85</p>
+            <p class="regular-text menu-item-price">$85</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -318,7 +319,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Macarons" data-price="25">
+          <div class="menu-item" data-name="Cheesecake - Strawberry" data-price="85">
             <img
               src="image/home/cheesecake/strawberry.jpg" alt=""
             />
@@ -327,7 +328,7 @@
               A vibrant cheesecake featuring the fresh, natural flavor of 
               ripe strawberries blended into the creamy filling.
             </p>
-            <p class="regular-text">$85</p>
+            <p class="regular-text menu-item-price">$85</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -354,7 +355,7 @@
       <section class="menu-container">
         <h1 class="menu-title">Cupcakes</h1>
         <div class="menu-items">
-          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
+          <div class="menu-item" data-name="Cupcake - Chocolate Delight" data-price="44">
             <img
               src="image/home/cupcakes/chocolate.JPG" alt=""
             />
@@ -363,7 +364,7 @@
               Rich chocolate cupcakes with chocolate buttercream and chocolate 
               shavings,sold by the dozen.
             </p>
-            <p class="regular-text">$44</p>
+            <p class="regular-text menu-item-price">$44</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -385,7 +386,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Cheesecake" data-price="30">
+          <div class="menu-item" data-name="Cupcake - Coco Loco" data-price="44">
             <img
               src="image/home/cupcakes/coconut.JPG" alt=""
             />
@@ -394,7 +395,7 @@
               Vanilla cupcakes with coconut cream cheese buttercream and 
               toasted coconut shavings, sold by the dozen.
             </p>
-            <p class="regular-text">$44</p>
+            <p class="regular-text menu-item-price">$44</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -416,7 +417,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Tiramisu" data-price="50">
+          <div class="menu-item" data-name="Cupcake - Strawberry" data-price="50">
             <img
               src="image/home/cupcakes/strawberry.jpg" alt=""
             />
@@ -425,7 +426,7 @@
               Strawberry cupcakes filled with fresh strawberries and topped 
               with pink strawberry frosting, sold by the dozen.
             </p>
-            <p class="regular-text">$50</p>
+            <p class="regular-text menu-item-price">$50</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -447,7 +448,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Macarons" data-price="25">
+          <div class="menu-item" data-name="Cupcake - Floral Charm" data-price="57">
             <img
               src="image/home/cupcakes/floral.jpeg" alt=""
             />
@@ -456,7 +457,7 @@
               Vanilla cupcakes elegantly decorated with a buttercream floral 
               design, adding a touch of sophistication. Sold by the dozen.
             </p>
-            <p class="regular-text">$57</p>
+            <p class="regular-text menu-item-price">$57</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -483,7 +484,7 @@
       <section class="menu-container">
         <h1 class="menu-title">Others</h1>
         <div class="menu-items">
-          <div class="menu-item" data-name="Chocolate Cake" data-price="40">
+          <div class="menu-item" data-name="Arabian Baklava Rings" data-price="15">
             <img
               src="image/home/others/baklava.jpg" alt=""
             />
@@ -492,7 +493,7 @@
               A delicate ring of flaky dough surrounding ground 
               pistachios. Crispy, sweet, and buttery.
             </p>
-            <p class="regular-text">$15</p>
+            <p class="regular-text menu-item-price">$15</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -514,7 +515,7 @@
               </form>
             </div>
           </div>
-          <div class="menu-item" data-name="Cheesecake" data-price="30">
+          <div class="menu-item" data-name="Biscoff Chocolate Chip Cookies" data-price="5.75">
             <img
               src="image/home/others/biscoff.JPG" alt=""
             />
@@ -523,7 +524,7 @@
               Soft brown butter cookie butter cookies, loaded with 
               biscoff and pools of melty chocolate. 
             </p>
-            <p class="regular-text">$5.75</p>
+            <p class="regular-text menu-item-price">$5.75</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -554,7 +555,7 @@
               Soft fluffernutter brown butter peanut butter cookies, loaded 
               with melty pools of chocolate and marshmallow fluff. 
             </p>
-            <p class="regular-text">$5.75</p>
+            <p class="regular-text menu-item-price">$5.75</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>
@@ -587,7 +588,7 @@
               and mascarpone cheese, and dusted with cocoa. All beautifully 
               arranged in an 8" round tray. 
             </p>
-            <p class="regular-text">$70</p>
+            <p class="regular-text menu-item-price">$70</p>
             <div class="menu-item-cart">
               <form>
                 <label for="amount" class="regular-text">Amount:</label>

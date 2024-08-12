@@ -9,17 +9,17 @@ main {
   padding: 1rem;
 }
 
+section {
+  margin-bottom: 20px;
+}
+
 .title {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .regular-text {
   text-align: justify;
   padding-bottom: 1rem;
-}
-
-section {
-  margin-bottom: 20px;
 }
 
 .founder-pics {

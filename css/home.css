@@ -110,7 +110,7 @@
   border-radius: 6px 36px 6px 36px;
 
   width: 15rem;
-  min-height: 20rem;
+  min-height: 25rem;
   padding: 1.25rem;
   padding-top: 0;
   text-align: center;
@@ -127,6 +127,10 @@
 
 .menu-item h3 {
   color: #520a1d;
+}
+
+.menu-item-price {
+  font-weight: bold;
 }
 
 .menu-item-cart-amount {
