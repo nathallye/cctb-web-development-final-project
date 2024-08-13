@@ -2,13 +2,20 @@
 
 Welcome to Manaly's Dessert Delivery, a user-friendly and interactive website designed for a dessert delivery service. This web application allows customers to explore a variety of desserts, place orders, and access information about past events where our desserts have been featured. Our goal is to provide a seamless experience from dessert selection to order placement.
 
+<div align="center">
+  <img width="700" src="https://github.com/user-attachments/assets/dc82085d-c63a-4eb8-9bfa-1a4a8cdc9793">
+</div>
+
+<div align="center">
+  <img width="700" src="https://github.com/user-attachments/assets/3a356abf-9aa7-4a6b-81eb-bd5202ebd6aa">
+</div>
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Website Structure](#website-structure)
 - [How to Run](#how-to-run)
 - [Repository Links](#repository-links)
 - [Contributors](#contributors)
-- [References](#references)
 
 ## Project Overview
 
