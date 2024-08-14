@@ -58,6 +58,6 @@ Welcome to Manaly's Dessert Delivery, a user-friendly and interactive website de
 ## Contributors
 
 - **Alicia Lira**
-- **Qurat Anny**
+- **Quratulain Anny**
 - **Maho Yashimoto**
 - **Nathallye Bacelar**
