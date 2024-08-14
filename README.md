@@ -53,7 +53,7 @@ Welcome to Manaly's Dessert Delivery, a user-friendly and interactive website de
 ## Repository Links
 
 - **GitHub Repository:** [https://github.com/nathallye/cctb-web-development-final-project](https://github.com/nathallye/cctb-web-development-final-project)
-- **Live Site:** [Vercel Deployment](https://vercel.com/your-deployment-link)
+- **Live Site:** [Vercel Deployment](https://manalys-desserts-delivery.vercel.app)
 
 ## Contributors
 
